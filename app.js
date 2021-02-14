@@ -14,11 +14,13 @@ function playSound(res) {
     noteAudio.currentTime = 0;
     noteAudio.play();
     res.classList.add('active')
-    noteAudio.addEventListener("ended", () => {
-        setTimeout(function () {
-            res.classList.remove('active');
-        }, 1000)
-    })
+    setTimeout(() => {
+        res.classList.remove('active');
+    }, 100);
+
+    // noteAudio.addEventListener("ended", () => {
+    //     res.classList.remove('active');
+    // })
 }
 
 document.addEventListener("keydown", e => {
