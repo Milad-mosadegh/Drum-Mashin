@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+
+
+section .main {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px;
+    margin-top: -80px;
+}
+
+
+.main .box{
+    padding: 100px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.hov.active{
+    background-color: #b3b3b3;
+}
+
+
+header{
+    text-align: center;
+    padding: 40px;
+}
+header h1{
+    font-size: 60px;
+}
