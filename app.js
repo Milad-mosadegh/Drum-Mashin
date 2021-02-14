@@ -15,7 +15,9 @@ function playSound(res) {
     noteAudio.play();
     res.classList.add('active')
     noteAudio.addEventListener("ended", () => {
-        res.classList.remove('active')
+        setTimeout(function () {
+            res.classList.remove('active');
+        }, 1000)
     })
 }
 
