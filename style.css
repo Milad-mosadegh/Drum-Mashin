@@ -14,6 +14,23 @@ body{
     background-size: auto;
 }
 
+header{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+header  a{
+    margin:  auto;
+    padding: 10px;
+    border: 2px solid red;
+    height: 60px;
+    color: whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
 section{
     min-height: 100vh;
     display: flex;
@@ -24,7 +41,7 @@ section{
 
 
 section .main {
-    width: 1000px;
+    width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
@@ -34,12 +51,13 @@ section .main {
     padding: 20px;
     background: #222;
     opacity: 0.8;
+    box-shadow: 4px 4px 29px rgb(0, 0, 0);
     
 }
 
 
 .main .box{
-    padding: 100px;
+    padding: 90px;
     text-align: center;
     color: white;
     border: 2px solid #333 ;
@@ -67,6 +85,8 @@ header h1{
     font-size: 60px;
     padding-top: 0px;
     color:rgba(245, 245, 245, 0.668);
-    text-shadow: 4px 5px 20px rgba(255, 0, 0, 0.644);
-
+    text-shadow: 4px 5px 20px rgba(255, 0, 0, 0.644),
+    20px 3px 12px rgba(242, 233, 61, 0.271),
+    -20px 3px 12px rgba(200, 200, 200, 0.36)
+    ;
 }
