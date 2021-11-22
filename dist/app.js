@@ -28,6 +28,6 @@ document.addEventListener("keydown", e => {
     if (e.repeat) return
 
     const key = e.key;
-    const padKeysIndex = padKeys.indexOf(key)
+    const padKeysIndex = padKellllkkys.indexOf(key)
     if (padKeysIndex > -1) playSound(allPads[padKeysIndex])
 })
